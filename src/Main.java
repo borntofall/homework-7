@@ -63,9 +63,9 @@ public class Main {
 
         contribution = 15000;
         total = 0;
-        month = 0;
-        while ( month >= 0 ) {
-            while (total <= 12_000_000) {
+        month = 1;
+
+            while (total < 12_000_000) {
 
                 total = total + contribution;
                 total = total + (total * 7) / 100;
@@ -76,7 +76,7 @@ public class Main {
                 month++;
 
            }
-        }
+
 
 
 
@@ -94,9 +94,31 @@ public class Main {
             total = total + (total * 7) / 100;
             if (month % 6 == 0)
             {
-                System.out.println( month + " сумма накоплений равна " + total);
+                System.out.println("За " + month + " месяцев ,сумма накоплений равна " + total);
             }
             month++;
+        }
+
+        System.out.println("Задача 7");
+
+        int friday = 5;
+
+        while ( friday <= 31) {
+            if (friday % 5 == 0)
+                System.out.println("Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет" );
+            friday += 5;
+        }
+
+        System.out.println("Задача 8");
+
+        int a = 2024;
+        int yearBefore = a - 200;
+        int yearAfter = a + 100;
+
+        for (year = yearBefore; year <= yearAfter; year++) {
+            if (year % 79 == 0) {
+                System.out.println(year);
+            }
         }
     }
 }
