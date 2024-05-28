@@ -103,7 +103,7 @@ public class Main {
         while (friday <= 31) {
 
             System.out.println("Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет");
-            friday += 5;
+            friday += 7;
 
         }
 
