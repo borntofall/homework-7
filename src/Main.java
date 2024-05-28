@@ -99,7 +99,6 @@ public class Main {
         System.out.println("Задача 7");
 
         int friday = 5;
-
         while (friday <= 31) {
 
             System.out.println("Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет");
